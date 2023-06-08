@@ -29,7 +29,7 @@ const Home: NextPage = () => {
               src="/Market.png"
               width={860}
               height={540}
-              alt=""
+              alt="Logo"
               quality={100}
               className={styles.heroAsset}
             />
