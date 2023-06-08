@@ -126,10 +126,10 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
             />
 
             <div className={styles.descriptionContainer}>
-              <h3 className={styles.descriptionTitle}>Description</h3>
+              <h3 className={styles.descriptionTitle}>Descripción</h3>
               <p className={styles.description}>{nft.metadata.description}</p>
 
-              <h3 className={styles.descriptionTitle}>Traits</h3>
+              <h3 className={styles.descriptionTitle}>Rasgos</h3>
 
               <div className={styles.traitsContainer}>
                 {Object.entries(nft?.metadata?.attributes || {}).map(
@@ -144,7 +144,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                 )}
               </div>
 
-              <h3 className={styles.descriptionTitle}>History</h3>
+              <h3 className={styles.descriptionTitle}>Historia</h3>
 
               <div className={styles.traitsContainer}>
                 {transferEvents?.map((event, index) => (
@@ -153,7 +153,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                     className={styles.eventsContainer}
                   >
                     <div className={styles.eventContainer}>
-                      <p className={styles.traitName}>Event</p>
+                      <p className={styles.traitName}>Evento</p>
                       <p className={styles.traitValue}>
                         {
                           // if last event in array, then it's a mint
@@ -220,7 +220,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                 }}
               />
               <div className={styles.nftOwnerInfo}>
-                <p className={styles.label}>Current Owner</p>
+                <p className={styles.label}>Propietario Actual</p>
                 <p className={styles.nftOwnerAddress}>
                   {nft.owner.slice(0, 8)}...{nft.owner.slice(-4)}
                 </p>
@@ -247,7 +247,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                           {" " + auctionListing[0]?.buyoutCurrencyValue.symbol}
                         </>
                       ) : (
-                        "Not for sale"
+                        "No en Venta"
                       )}
                     </>
                   )}
@@ -261,7 +261,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                       {auctionListing && auctionListing[0] && (
                         <>
                           <p className={styles.label} style={{ marginTop: 12 }}>
-                            Bids starting from
+                            Ofertas comienzan desde
                           </p>
 
                           <div className={styles.pricingValue}>
@@ -289,25 +289,25 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                   action={async () => await buyListing()}
                   className={styles.btn}
                   onSuccess={() => {
-                    toast(`Purchase success!`, {
+                    toast(`Compra Exitosa!`, {
                       icon: "✅",
                       style: toastStyle,
                       position: "bottom-center",
                     });
                   }}
                   onError={(e) => {
-                    toast(`Purchase failed! Reason: ${e.message}`, {
+                    toast(`Compra fallida! Motivo: ${e.message}`, {
                       icon: "❌",
                       style: toastStyle,
                       position: "bottom-center",
                     });
                   }}
                 >
-                  Buy at asking price
+                  Compran a precio de Venta
                 </Web3Button>
 
                 <div className={`${styles.listingTimeContainer} ${styles.or}`}>
-                  <p className={styles.listingTime}>or</p>
+                  <p className={styles.listingTime}>o</p>
                 </div>
 
                 <input
@@ -328,7 +328,7 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                   action={async () => await createBidOrOffer()}
                   className={styles.btn}
                   onSuccess={() => {
-                    toast(`Bid success!`, {
+                    toast(`Oferta exitosa!`, {
                       icon: "✅",
                       style: toastStyle,
                       position: "bottom-center",
@@ -336,14 +336,14 @@ export default function TokenPage({ nft, contractMetadata }: Props) {
                   }}
                   onError={(e) => {
                     console.log(e);
-                    toast(`Bid failed! Reason: ${e.message}`, {
+                    toast(`Oferta fallida! Motivo: ${e.message}`, {
                       icon: "❌",
                       style: toastStyle,
                       position: "bottom-center",
                     });
                   }}
                 >
-                  Place bid
+                  Colocar Oferta
                 </Web3Button>
               </>
             )}

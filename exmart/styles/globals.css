@@ -10,17 +10,17 @@ body {
 }
 
 html {
-  color-scheme: dark;
+  color-scheme: light;
 }
 
 body {
   color: #ffffff;
-  background: #191c1f;
+  background: #072c51;
   --color-primary: #fada3f;
   --color-secondary: #ff2136;
   --color-tertiary: #0294fe;
   --color-quaternary: #9b4dff;
-  --card-background: #252133;
+  --card-background: #3e2596;
   --highlighted-background: #202326;
   font-weight: 400;
 }
