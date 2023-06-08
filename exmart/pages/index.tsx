@@ -26,10 +26,10 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.heroAssetFrame}>
             <Image
-              src="/hero-asset.png"
+              src="/Market.png"
               width={860}
               height={540}
-              alt="Hero asset, NFT marketplace"
+              alt=""
               quality={100}
               className={styles.heroAsset}
             />
@@ -38,10 +38,10 @@ const Home: NextPage = () => {
             <div className={styles.heroBody}>
               <h1 className={styles.heroTitle}>
                 <span className={styles.heroTitleGradient}>
-                  Build NFT Marketplaces
+                 Example-Mart
                 </span>
                 <br />
-                faster than ever.
+                Markerplace de Ejemplo
               </h1>
               <p className={styles.heroSubtitle}>
                 <Link
