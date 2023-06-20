@@ -16,7 +16,7 @@ export function Navbar() {
         <div className={styles.navLeft}>
           <Link href="/" className={`${styles.homeLink} ${styles.navLeft}`}>
             <Image
-              src="/LogoMart.png"
+              src="/EscudoUcab.png"
               width={48}
               height={48}
               alt="NFT marketplace sample logo"
@@ -35,7 +35,7 @@ export function Navbar() {
 
         <div className={styles.navRight}>
           <div className={styles.navConnect}>
-            <ConnectWallet theme="dark" btnTitle="Connect Wallet" />
+            <ConnectWallet theme="dark" btnTitle="Conectar Billetera" />
           </div>
           {address && (
             <Link className={styles.link} href={`/profile/${address}`}>

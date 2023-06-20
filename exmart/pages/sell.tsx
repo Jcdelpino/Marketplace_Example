@@ -22,10 +22,10 @@ export default function Sell() {
 
   return (
     <Container maxWidth="lg">
-      <h1>Sell NFTs</h1>
+      <h1>Vender NFTs</h1>
       {!selectedNft ? (
         <>
-          <p>Select which NFT you&rsquo;d like to sell below.</p>
+          <p>Seleccione el NFT que desea publicar para la venta.</p>
           <NFTGrid
             data={data}
             isLoading={isLoading}
@@ -33,7 +33,7 @@ export default function Sell() {
               setSelectedNft(nft);
             }}
             emptyText={
-              "Looks like you don't own any NFTs in this collection. Head to the buy page to buy some!"
+              "Parece que no tienes NFTs en esta billetera. Dirígete a la página de Compras!"
             }
           />
         </>
@@ -57,7 +57,7 @@ export default function Sell() {
           </div>
 
           <div className={tokenPageStyles.listingContainer}>
-            <p>You&rsquo;re about to list the following item for sale.</p>
+            <p>Estas por publicar un NFT a la venta.</p>
             <h1 className={tokenPageStyles.title}>
               {selectedNft.metadata.name}
             </h1>

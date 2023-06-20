@@ -15,7 +15,7 @@ const Home: NextPage = () => {
           <div className={styles.heroBackground}>
             <div className={styles.heroBackgroundInner}>
               <Image
-                src="/hero-gradient.png"
+                src="/Fondo_Market_Ucab.png"
                 width={1390}
                 height={1390}
                 alt="Background gradient from red to blue"
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
           </div>
           <div className={styles.heroAssetFrame}>
             <Image
-              src="/Market.png"
+              src="/Ucab_Mart.png"
               width={860}
               height={540}
               alt="Logo"
@@ -44,28 +44,16 @@ const Home: NextPage = () => {
                 Markerplace de Ejemplo
               </h1>
               <p className={styles.heroSubtitle}>
-                <Link
-                  className={styles.link}
-                  href="https://thirdweb.com"
-                  target="_blank"
-                >
-                  thirdweb
-                </Link>{" "}
-                gives you the tools you need to create audited, performant, and
-                flexible NFT marketplaces in <b>hours</b>, <i>not months</i>.
+                
+                En este Marketplace puedes comprar, vender o subastar
+                 tus NFTs.
               </p>
 
               <div className={styles.heroCtaContainer}>
                 <Link className={styles.heroCta} href="/buy">
-                  Get Started
+                  Comenzar!
                 </Link>
-                <Link
-                  className={styles.secondaryCta}
-                  href="https://github.com/thirdweb-example/marketplace-v3"
-                  target="_blank"
-                >
-                  GitHub
-                </Link>
+                
               </div>
             </div>
           </div>
